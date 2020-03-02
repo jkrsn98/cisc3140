@@ -1,0 +1,241 @@
+Script started on 2020-03-02 01:49:16-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="87" LINES="43"]
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ mkdir sportif[K[K[K[Ktifycharts[K[K[K[K[K[KCa[Kharts
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ cd spotifyCharts
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ wget https://spotifycharts.com/viral/global/daily/latest/download
+--2020-03-02 01:49:39--  https://spotifycharts.com/viral/global/daily/latest/download
+Resolving spotifycharts.com (spotifycharts.com)... 104.24.124.187, 104.24.125.187, 2606:4700:3035::6818:7dbb, ...
+Connecting to spotifycharts.com (spotifycharts.com)|104.24.124.187|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4152 (4.1K) [text/csv]
+Saving to: ‘download’
+
+download                0%[                         ]       0  --.-KB/sdownload              100%[========================>]   4.05K  --.-KB/s    in 0s      
+
+2020-03-02 01:49:40 (10.3 MB/s) - ‘download’ saved [4152/4152]
+
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ dir
+download
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ cat download | cut -d ',' -f3 > artists.txt
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ dir
+artists.txt  download
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ head -2 artists.txt
+Artist
+"Cookiee Kawaii"
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ (head -n 1 artists.txt && tail -n +2 artists.txt | sort) > sortedArtists.txt
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ head -2 sortedArtists.txt
+Artist
+24kGoldn
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ head -2 sortedArtists.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -2 sortedArtist[1Ps.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ [C[C[C -2 sortedArtists[1P.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ [C[C -2 sortedArtists.[1Ptxt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ [C -2 sortedArtists.t[1Pxt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ t -2 sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ [Ca -2 sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ [C[Ci -2 sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ [C[C[Cl -2 sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ [C[C[C[C
+
+"Zeynep Bastık"
+Zico
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ cat sortedArtists.txt | uniq | tee sortedArtists-noDuplicates.txt
+Artist
+24kGoldn
+"Ali Gatie"
+ANNA
+"Arsy Widianto"
+Ashe
+Breland
+"Brent Faiyaz"
+"Cookiee Kawaii"
+"Doja Cat"
+DripReport
+"Dua Lipa"
+EVERGLOW
+Fasma
+Hindia
+"Jack Harlow"
+"Lil Kapow"
+Mahen
+MASE
+"MC Lya"
+Murda
+"Myke Towers"
+"Official HIGE DANdism"
+Opgeblazen
+Pole.
+"Pop Smoke"
+Powfu
+PUBLIC
+"Rennan da Penha"
+Reynmen
+"Roddy Ricch"
+"SAINt JHN"
+SAYGRACE
+Smoove'L
+Soulstice
+Surfaces
+Swing
+"Tay Money"
+Teqkoi
+"The Kid LAROI"
+"The Weeknd"
+Tiagz
+ Tom Trigger"
+Ultradiox
+UPSAHL
+"Victor Leksell"
+"Yerin Baek"
+"YOON MI RAE"
+"Zeynep Bastık"
+Zico
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ dir
+artists.txt  download  sortedArtists-noDuplicates.txt  sortedArtists.txt
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/spotifyCharts[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/spotifyCharts[00m$ cd ..
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ mv spotifyCharts/sorted-Artists.no-[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks-noDuplicates.txt
+mv: missing destination file operand after 'spotifyCharts/sorted-Artists-noDuplicates.txt'
+Try 'mv --help' for more information.
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ mv spotifyCharts/sorted-Artists-noDuplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pdircat sortedArtists.txt | uniq | tee sortedArtists-noDuplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [7Ptail -2 sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n +2 artists.txt | sort) > sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [13Phead -2 artists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdir[Kcat download | cut -d ',' -f3 > artists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget https://spotifycharts.com/viral/global/daily/latest/download[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [16Pcd spotifyCharts
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@mkdir[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[1Pdirwget https://spotifycharts.com/viral/global/daily/latest/download[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [2Ptail -10 sortedMovieTitles.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 movieTitles.txt && tail -n +2 movieTitles.txt | sort) > sortedMovieTitles.txt[A[2Ptail -10 sortedMovieTitles.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Ptail -10 movieTitles.txthead[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMovieTitles.txtcat movies.csv | cut -d ',' -f2 > movieTitles.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [2Phead -10 sortedMovieTitles.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4PsortedMovieTitles.txtsort movies2.txt > sortedMovieTitles.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ cat movies.csv | cut -d ',' -f2 > movies2.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[C[C[C[C[C[C2.txt[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@head -10[C[C[C[C[C[C[C[C[C[C[C[C[11@sort movies2.txt >>[C[C[C[C[C[C[C[C[C[C[C[C[11Phead -10[C[C[C[C[C[C[C[C[C[C[C[C[5Pcat[C[C[C[C[C[C[C[C[C[C[C[C[5@head -10[C[C[C[C[C[C[C[C[C[C[C[C[11@sort movies2.txt >>[C[C[C[C[C[C[C[C[C[C[C[C[11Phead -10[C[C[C[C[C[C[C[C[C[C[C[Ccat movies.csv | cut -d ',' -f2 > movies2.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [12Phead -10 movies2.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10@sort movies2.txt >[C[C[C[C[C[C[C[C[C[C[C[C[10Phead -10[C[C[C[C[C[C[C[C[C[C[C[Ccat movies.csv | cut -d ',' -f2 > movies2.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdir[Kcat movies2.txt[5@head -10[C[C[C[C[C[C[C[C[C[C[C[C[10@sort movies2.txt >[C[C[C[C[C[C[C[C[C[C[C[Cdir[Kcd ml-latest-smalldir[Kcat sortedArtists.txt(head -n 1 artists.txt && tail -n +2 artists.txt | sort) > sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n +3 artists.txt | sort) > sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n 1 artists.txt | sort) > sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n 1 artists.txt | sort) >> sortedArtists.txt[C[C[2P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n +2 artists.txt | sort) >> sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n +3 artists.txt | sort) >> sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [12Phead -10 artists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cconvert -delay 50 -loop 0 *.png animation.gif[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd assignment5dir[Kcd cisc3140dir[Kcd Documents[Kdirscript[3Pdircat artists.txt aaanoDuplicates.txtsortedArtists.txt | uniq | tee noDuplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ sort artists.txt | uniq | tee noD[5Puplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [10Pcat artists.txt | uniq
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -d[4PsortedArtists.txt(head -n 2 artists.txt && tail -n +3 artists.txt | sort) >> sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [16Patom artists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@head -10[C[C[C[C[C[C[C[C[C[C[C[Crm sortedArtists.txtdir[Krm sortedArtists.txthead -10 artists.txt[4Patom[C[C[C[C[C[C[C[C[C[C[C[C[4@head -10[C[C[C[C[C[C[C[C[C[C[C[Crm sortedArtists.txtdir[Krm data2.csvdir[Kcat sortedArtists.txthead -n 1 artists.txt > sortedArtists.txt && tail -n +2 artists.txt | sort -t "|" -k 1 >> sortedArtists.txt[A[11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdir[Krm data2.csvdir[Krm data2.csvdir[Krm sortedArtists.txthead -10 artists.txt[4Patom[C[C[C[C[C[C[C[C[C[C[C[C(head -n 2 artists.txt && tail -n +3 artists.txt | sort) >> sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cartists.txt | uniq -d[Ksort artists.txt | uniq | tee noDuplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ cat sortedArtists.txt | uniq | tee noDuplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[12PnoDuplicates.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Partists.txt aaadir[Kscript[3Pdir[1Pcd Documentsdir[Kcd cisc3140dir[Kcd assignment5dir[Kconvert -delay 50 -loop 0 *.png animation.gif[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [12Phead -10 artists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n +3 artists.txt | sort) >> sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n +2 artists.txt | sort) >> sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n artists.txt | sort) >> sortedArtists.txt[C[C[2@1 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n 1 artists.txt | sort) > sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n +3 artists.txt | sort) > sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 artists.txt && tail -n +2 artists.txt | sort) > sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [11Pcat sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdir[Kcd ml-latest-smalldir[Ksort movies2.txt > movies2.txt[10Phead -10[C[C[C[C[C[C[C[C[C[C[C[C[5Pcat[C[C[C[C[C[C[C[C[C[C[C[Cdir[Kcat movies.csv | cut -d ',' -f2 > movies2.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [12Phead -10 movies2.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10@sort movies2.txt >[C[C[C[C[C[C[C[C[C[C[C[C[10Phead -10[C[C[C[C[C[C[C[C[C[C[C[Ccat movies.csv | cut -d ',' -f2 > movies2.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [12Phead -10 movies2.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11@sort movies2.txt >>[C[C[C[C[C[C[C[C[C[C[C[C[11Phead -10[C[C[C[C[C[C[C[C[C[C[C[C[5Pcat[C[C[C[C[C[C[C[C[C[C[C[C.csv | cut -d ',' -f2 > movies2.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ sort movies2.txt > sortedMovieTit[5Ples.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [7Pcat sortedMovieTitles.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-10 sortedMovieTitles.txt[1@head[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat movies.csv | cut -d ',' -f2 > movieTitles.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [8Phead -10 MovieTitles.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CmovieTitles.txttail[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead -10 sortedMovieTitles.txttail[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(head -n 1 movieTitles.txt && tail -n +2 movieTitles.txt | sort) > sortedMovieTitles.txt[A[2Phead -10 sortedMovieTitles.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctail[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget https://spotifycharts.com/viral/global/daily/latest/download[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexitmkdir spotifyCharts[3Pcd[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget https://spotifycharts.com/viral/global/daily/latest/download[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat download | cut -d ',' -f3 > artists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead -2 artists.txt(head -n 1 artists.txt && tail -n +2 artists.txt | sort) > sortedArtists.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [7Phead -2 sortedArtists.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctail[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat sortedArtists.txt | uniq | tee sortedArtists-noDuplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..mv spotifyCharts/sorted-Artists-noDuplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmv spotifyCharts/sorted-Artists-noDuplicates.txt  [K.
+mv: cannot stat 'spotifyCharts/sorted-Artists-noDuplicates.txt': No such file or directory
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ mv spotifyCharts/sorted-Artists-noDuplicates.txt .[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CArtists-no[1PDuplicates.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+mv: missing destination file operand after 'spotifyCharts/sortedArtists-noDuplicates.txt'
+Try 'mv --help' for more information.
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ mv spotifyCharts/sortedArtists-noDuplicates.txt .
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dur'[K[K[Kir
+images	sortedArtists-noDuplicates.txt	spotifyCharts  typescript
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ mkdir movies
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ cd movies
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ wget http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+--2020-03-02 01:53:36--  http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+Resolving files.grouplens.org (files.grouplens.org)... 128.101.65.152
+Connecting to files.grouplens.org (files.grouplens.org)|128.101.65.152|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 978202 (955K) [application/zip]
+Saving to: ‘ml-latest-small.zip’
+
+ml-latest-small.zip     0%[                         ]       0  --.-KB/sml-latest-small.zip    58%[=============>           ] 558.23K  2.72MB/s               l.zip   100%[========================>] 955.28K  3.21MB/s    in 0.3s    
+
+2020-03-02 01:53:36 (3.21 MB/s) - ‘ml-latest-small.zip’ saved [978202/978202]
+
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ unzip ml-latest-small.zip[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K/iz[Kip[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kzip[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kp
+unzip:  cannot find or open ml-latest-small/zip, ml-latest-small/zip.zip or ml-latest-small/zip.ZIP.
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ unzip ml-a[Klatest.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdir
+ml-latest-small.zip
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ unzip ml-latest-small.zip[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kp
+Archive:  ml-latest-small.zip
+   creating: ml-latest-small/
+  inflating: ml-latest-small/links.csv
+  inflating: ml-latest-small/tags.csv
+  inflating: ml-latest-small/ratings.csv
+  inflating: ml-latest-small/README.txt
+  inflating: ml-latest-small/movies.csv
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ cd mk[Kl-latest-small.[K.[K[Kl
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies/ml-latest-small[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies/ml-latest-small[00m$ dir
+links.csv  movies.csv  ratings.csv  README.txt	tags.csv
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies/ml-latest-small[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies/ml-latest-small[00m$ head 019[K[K[K-10movies.v[Kcsv
+movieId,title,genres
+1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
+2,Jumanji (1995),Adventure|Children|Fantasy
+3,Grumpier Old Men (1995),Comedy|Romance
+4,Waiting to Exhale (1995),Comedy|Drama|Romance
+5,Father of the Bride Part II (1995),Comedy
+6,Heat (1995),Action|Crime|Thriller
+7,Sabrina (1995),Comedy|Romance
+8,Tom and Huck (1995),Adventure|Children
+9,Sudden Death (1995),Action
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies/ml-latest-small[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies/ml-latest-small[00m$ cd ..
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ mv ml/[K-latest-small/movies.csv .
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ dir
+ml-latest-small  ml-latest-small.zip  movies.csv
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ head 012[K[K[K-12 movies.csv
+movieId,title,genres
+1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
+2,Jumanji (1995),Adventure|Children|Fantasy
+3,Grumpier Old Men (1995),Comedy|Romance
+4,Waiting to Exhale (1995),Comedy|Drama|Romance
+5,Father of the Bride Part II (1995),Comedy
+6,Heat (1995),Action|Crime|Thriller
+7,Sabrina (1995),Comedy|Romance
+8,Tom and Huck (1995),Adventure|Children
+9,Sudden Death (1995),Action
+10,GoldenEye (1995),Action|Adventure|Thriller
+11,"American President, The (1995)",Comedy|Drama|Romance
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ tail -4 movies.csv
+193583,No Game No Life: Zero (2017),Animation|Comedy|Fantasy
+193585,Flint (2017),Drama
+193587,Bungo Stray Dogs: Dead Apple (2018),Action|Animation
+193609,Andrew Dice Clay: Dice Rules (1991),Comedy
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ cat movies.csv | cut -d ',' -f2 > movieTitles.txt
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ head -10 movieTit;es[K[K[Kles.txt
+title
+Toy Story (1995)
+Jumanji (1995)
+Grumpier Old Men (1995)
+Waiting to Exhale (1995)
+Father of the Bride Part II (1995)
+Heat (1995)
+Sabrina (1995)
+Tom and Huck (1995)
+Sudden Death (1995)
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ sort movieTitles.txt > sortedMovieTitles.txt
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ head -3 movieTitles.txt
+title
+Toy Story (1995)
+Jumanji (1995)
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ (head -n 1 movieTitles.txt && tail -n +2 movieTitles.txt | sort) > sortedMovieTitles.txt[A[2Phead -3 movieTitles.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CsmovieTitles.txtomovieTitles.txt [A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ [C[C[C[C[C[C[C[C[C[CrmovieTitles.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ [C[C[C[C[C[C[C[C[C[C[CtmovieTitles.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ [C[C[C[C[C[C[C[C[C[C[C[CemovieTitles.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[CdmovieTitles.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[CovieTitles.t[1Pxt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[CMovieTitles.txt[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+00 Schneider - Jagd auf Nihil Baxter (1994)
+"10
+100 Girls (2000)
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ (head -n 1 movieTitles.txt && tail -n +2 movieTitles.txt | sort) > sortedMovieTitles.txt
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ (head -n 1 movieTitles.txt && tail -n +2 movieTitles.txt | sort) > sortedMovieTitles.txt[Ahead -3 sortedMovieTitles.txt[K
+title
+00 Schneider - Jagd auf Nihil Baxter (1994)
+"10
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ cd ..
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir
+images	movies	sortedArtists-noDuplicates.txt	spotifyCharts  typescript
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ convert -delay 50 -loop 0 *.png gif0.gif[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci*.png gif0.gif[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm*.png gif0.gif[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca*.png gif0.gif[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg*.p[1@n[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce*.[1@p[A]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs*[1@.[1@.[1P[1@/
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir
+gif0.gif  images  movies  sortedArtists-noDuplicates.txt  spotifyCharts  typescript
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ exit
+exit
+
+Script done on 2020-03-02 01:57:54-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,17 @@
+Script started on 2020-03-02 01:59:09-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="87" LINES="43"]
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir
+gif0.gif  movies			  spotifyCharts  typescript2
+images	  sortedArtists-noDuplicates.txt  typescript
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ cd movies
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ dir
+ml-latest-small      movies.csv       sortedMovieTitles.txt
+ml-latest-small.zip  movieTitles.txt
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5/movies[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5/movies[00m$ cd ..
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ mv so[K[Kmovies/sortedMovieTitles.txt  .
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ dir
+gif0.gif  movies			  sortedMovieTitles.txt  typescript
+images	  sortedArtists-noDuplicates.txt  spotifyCharts		 typescript2
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment5[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment5[00m$ exit
+exit
+
+Script done on 2020-03-02 01:59:55-05:00 [COMMAND_EXIT_CODE="0"]
