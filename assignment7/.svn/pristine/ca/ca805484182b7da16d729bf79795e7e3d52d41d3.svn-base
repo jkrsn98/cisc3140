@@ -1,0 +1,56 @@
+Script started on 2020-03-15 16:15:18-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ ls
+main.cpp  [0m[01;32mmain.out[0m  Makefile  typescript
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ male[K[Kke
+g++ -c main.cpp
+g++ main.o -o output
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ ./main.oit[K[Kut
+Demonstrating a make file
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ make clean
+rm *.o output
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ ls
+main.cpp  [0m[01;32mmain.out[0m  Makefile  typescript
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ svn checkout file://@[K$HOME /.svnrepos/MyRepo.trunk ./
+svn: E170013: Unable to connect to a repository at URL 'file:///home/justin/.svnrepos/MyRepo.trunk'
+svn: E180001: Unable to open repository 'file:///home/justin/.svnrepos/MyRepo.trunk'
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ svn checkout file://$HOME/.svnrepos/MyRepo.trunk ./[C[C[C[C[C[1P[1@/
+Restored 'output'
+Restored 'help'
+Checked out revision 2.
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ rmdir ot[Kut[K[K[K[K[K[K[K output
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ rmd[Kdir help
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ svn add --force ./
+A         typescript
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ svn commit -m "import."
+Adding         typescript
+Transmitting file data .done
+Committing transaction...
+Committed revision 3.
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ svn update
+Updating '.':
+Restored 'help'
+Restored 'output'
+At revision 3.
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ ls
+[0m[01;34mhelp[0m  main.cpp  [01;32mmain.out[0m  Makefile  [01;32moutput[0m  typescript
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ svn rm
+svn: E205001: Try 'svn help delete' for more information
+svn: E205001: Not enough arguments provided
+]0;justin@j-XPS-13-9350: ~/Documents/cisc3140/assignment7[01;32mjustin@j-XPS-13-9350[00m:[01;34m~/Documents/cisc3140/assignment7[00m$ svn help delete
+delete (del, remove, rm): Remove files and directories from version control.
+usage: 1. delete PATH...
+       2. delete URL...
+
+  1. Each item specified by a PATH is scheduled for deletion upon
+    the next commit.  Files, and directories that have not been
+    committed, are immediately removed from the working copy
+    unless the --keep-local option is given.
+    PATHs that are, or contain, unversioned or modified items will
+    not be removed unless the --force or --keep-local option is given.
+
+  2. Each item specified by a URL is deleted from the repository
+    via an immediate commit.
+
+Valid options:
+  --force                  : force operation to run
+  -q
