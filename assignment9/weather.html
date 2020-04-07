@@ -7,16 +7,21 @@
 
   <body>
 
-    <div class="form">
-      <form action="weather.html" method="GET">
-        <input id="location" type="text" name="location" required>
-        <br>
-        <label for="location"> Location? </label>
-        <br>
-        <input id="submissionBox" type="submit" value="Go">
-      </form>
+    <div class="title">
+      <p>the temperature in <em id="locationName"></em> is currently</p>
     </div>
 
+    <div class="weatherBox">
+      <center>
+      <div class="content">
+
+      </div>
+      </center>
+    </div>
+
+    <div class="notif">
+      <p class="msg"></p>
+    </div>
 
     <div class ="test">
       <p><a href="https://www.pexels.com/photo/bokeh-night-lights-city-9044/" target="_blank">Blurred Photography of City Buildings</a></p>
@@ -26,7 +31,7 @@
 
     <footer>
       <h5>Justin Krasner | CISC3140</h5>
-      <h6>Powered by Dark Sky</h6>
+      <h6>Powered by DarkSky</h6>
     </footer>
 
   </body>
