@@ -2,10 +2,12 @@
 
 Small weather app using Dark Sky's weather API along with Google's Geocode and Timezone APIs.
 
-## What it does
+What it does
+------------
 
 test
 
-##How it works
+How it works
+------------
 
 test
