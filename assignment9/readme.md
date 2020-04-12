@@ -2,6 +2,7 @@
 
 This is a small weather app using [Dark Sky's weather API](https://darksky.net/dev) along with Google's [Geocode](https://developers.google.com/maps/documentation/geocoding/start) and [Timezone](https://developers.google.com/maps/documentation/timezone/start) APIs.
 
+[hosted on Repl.it](https://assignment9.jkrsn98.repl.co) (sometimes doesn't load right)
 
 ----------
 
