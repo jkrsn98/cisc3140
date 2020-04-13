@@ -1,12 +1,15 @@
 * {
   box-sizing: border-box;
 }
+
 body{
-  background-color: #383838;
-  background-image: url("background.jpg");
-  background-position: top;
   background-size: auto;
+  background-position: top;
   font-family: 'Montserrat', sans-serif;
+}
+
+#home{
+  background-color: rgb(107, 107, 130)	;
 }
 
 .title{
@@ -24,18 +27,19 @@ body{
 }
 
 .weatherBox{
-  font-family: Helvetica;
+  font-family: Arial, 'Source Sans Pro', sans-serif;
   background-color: darkgray;
-  background-image: url("rain.gif");
+  background-size:cover;
   width:22vw;
-  min-width: 200px;
-  min-height: 200px;
-  margin: 50px auto 0; /* changed from 0 auto */
-  /* padding: 25px; to make weather box larger */
-  font-size: 20vw;
+  margin: 50px auto 0;
+  text-align: center;
+  font-size: 19vw;
   border-radius: 25px;
   border: 2px solid black;
-  opacity:50%;
+}
+
+.content{
+  opacity:100%;
 }
 
 .notif{
@@ -87,7 +91,6 @@ footer{
 input[type="text"]{
   min-height: 25px;
   text-align: center;
-  //margin:0 auto;
   font-size: 32px;
   border-radius: 5px;
   border:2px solid #cccccc;

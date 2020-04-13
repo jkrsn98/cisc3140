@@ -5,15 +5,15 @@ var timestamp = targetDate.getTime()/1000 + targetDate.getTimezoneOffset() * 60;
 var localDate, offsets;
 var formattedAd;
 var day, temp, rain, windy, cloudy;
-//var caploc = loc.toLowerCase();
-//console.log(caploc);
+var locLower = loc.toLowerCase();
+console.log(locLower);
 window.onload = function(){
-  document.getElementById('locationName').innerHTML = loc; //'formattedAd' to display formal location;
+  document.getElementById('locationName').innerHTML = locLower; //'formattedAd' to display formal location;
   document.getElementsByClassName("content")[0].innerHTML = temp;
-  displayInfo();
+  displayLogic();
 };
 
-function displayInfo(){
+function displayLogic(){
   if(day && !cloudy){
     setBackgroundImage('bgday1.jpg');
     setWeatherBoxOpacity('25%');
@@ -53,15 +53,18 @@ function displayInfo(){
   if(!day){
     setBackgroundImage('bgnight1.jpg');
     setWeatherBoxOpacity('35%');
-    setMessage("Have a good night.");
+    setMessage("The night is calm.");
     if(rain){
       setWeatherBoxOpacity('20%');
       setWeatherBoxBackground('rainnight.gif');
+      setMessage("It's a rainy night.");
+
     }
     else if(windy){
       setBackgroundImage('bgnight2.jpg');
-
       setWeatherBoxBackground('windy3.gif');
+      setMessage("It's a windy night.");
+
     }else{
       setBackgroundImage('bgnight2.jpg');
       document.getElementsByClassName("content")[0].style.color= "grey";
