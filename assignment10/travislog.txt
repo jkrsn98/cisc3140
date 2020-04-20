@@ -1,0 +1,217 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: b005ca33-fa76-4c64-b2d9-fbeb1db86d36@1.worker-org-db8cd8d97-njdqc.gce-production-1
+version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
+instance: travis-job-eb6e4320-4b18-4876-a36b-36b732386ee6 travis-ci-sardonyx-xenial-1553530528-f909ac5 (via amqp)
+startup: 6.158157573s
+travis_fold:end:worker_info[0Ktravis_time:start:22f79ded[0Ktravis_time:end:22f79ded:start=1587199846038701484,finish=1587199846172925164,duration=134223680,event=no_world_writable_dirs[0Ktravis_time:start:03ec013c[0Ktravis_time:end:03ec013c:start=1587199846176042633,finish=1587199846183795663,duration=7753030,event=agent[0Ktravis_time:start:0115ec6b[0Ktravis_time:end:0115ec6b:start=1587199846186486807,finish=1587199846188621573,duration=2134766,event=check_unsupported[0Ktravis_time:start:00a62278[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: node_js
+Build dist: xenial
+Build id: 676519802
+Job id: 676519803
+Runtime kernel version: 4.15.0-1028-gcp
+travis-build version: 6303b206
+[34m[1mBuild image provisioning date and time[0m
+Mon Mar 25 16:43:24 UTC 2019
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+42e42e4 https://github.com/travis-ci/travis-cookbooks/tree/42e42e4
+[34m[1mgit version[0m
+git version 2.21.0
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.6.0
+[34m[1mshfmt version[0m
+v2.6.3
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.12.4
+[34m[1mheroku version[0m
+heroku/7.22.7 linux-x64 node-v11.10.1
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-09-28 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 4.8
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.25, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.3.3
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.7 (Ubuntu 10.7-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:44:48)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.3
+[34m[1mnvm version[0m
+0.34.0
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+[34m[1mphpenv version[0m
+rbenv 1.1.2
+[34m[1mrvm version[0m
+rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.0.7
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.21
+9.5.16
+9.6.12
+[34m[1mRedis version[0m
+redis-server 5.0.4
+[34m[1mPre-installed Go versions[0m
+1.11.1
+[34m[1mmvn version[0m
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+[34m[1mgradle version[0m
+Gradle 4.10.2!
+[34m[1mlein version[0m
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.15.3
+v11.0.0
+v4.9.1
+v6.17.0
+v8.12.0
+v8.15.1
+v8.9
+[34m[1mphpenv versions[0m
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.8.4 2019-02-11 10:52:10
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+travis_fold:end:system_info[0K
+travis_time:end:00a62278:start=1587199846191414760,finish=1587199846199655321,duration=8240561,event=show_system_info[0Ktravis_time:start:0c2633c1[0Ktravis_time:end:0c2633c1:start=1587199846202508723,finish=1587199846216269641,duration=13760918,event=rm_riak_source[0Ktravis_time:start:023a3ac5[0Ktravis_time:end:023a3ac5:start=1587199846219246431,finish=1587199846225696247,duration=6449816,event=fix_rwky_redis[0Ktravis_time:start:1814cad0[0Ktravis_time:end:1814cad0:start=1587199846230017023,finish=1587199846625760366,duration=395743343,event=wait_for_network[0Ktravis_time:start:12c025f8[0Ktravis_time:end:12c025f8:start=1587199846628886420,finish=1587199846819699871,duration=190813451,event=update_apt_keys[0Ktravis_time:start:02645526[0Ktravis_time:end:02645526:start=1587199846822714747,finish=1587199846874511699,duration=51796952,event=fix_hhvm_source[0Ktravis_time:start:0afbed93[0Ktravis_time:end:0afbed93:start=1587199846877632015,finish=1587199846880113093,duration=2481078,event=update_mongo_arch[0Ktravis_time:start:03d45b00[0Ktravis_time:end:03d45b00:start=1587199846882982641,finish=1587199846923352854,duration=40370213,event=fix_sudo_enabled_trusty[0Ktravis_time:start:20184fb4[0Ktravis_time:end:20184fb4:start=1587199846926699499,finish=1587199846929076587,duration=2377088,event=update_glibc[0Ktravis_time:start:0be0df19[0Ktravis_time:end:0be0df19:start=1587199846931933650,finish=1587199846939804220,duration=7870570,event=clean_up_path[0Ktravis_time:start:022903b8[0Ktravis_time:end:022903b8:start=1587199846942765689,finish=1587199846950511979,duration=7746290,event=fix_resolv_conf[0Ktravis_time:start:1ed1cc65[0Ktravis_time:end:1ed1cc65:start=1587199846953439639,finish=1587199846962078071,duration=8638432,event=fix_etc_hosts[0Ktravis_time:start:0ae9773f[0Ktravis_time:end:0ae9773f:start=1587199846964883005,finish=1587199846973013702,duration=8130697,event=fix_mvn_settings_xml[0Ktravis_time:start:0739c97a[0Ktravis_time:end:0739c97a:start=1587199846975881330,finish=1587199846984956426,duration=9075096,event=no_ipv6_localhost[0Ktravis_time:start:19311348[0Ktravis_time:end:19311348:start=1587199846987798001,finish=1587199846989925027,duration=2127026,event=fix_etc_mavenrc[0Ktravis_time:start:07bc1c90[0Ktravis_time:end:07bc1c90:start=1587199846992869191,finish=1587199846995704863,duration=2835672,event=fix_wwdr_certificate[0Ktravis_time:start:07f52238[0Ktravis_time:end:07f52238:start=1587199846998516908,finish=1587199847021552866,duration=23035958,event=put_localhost_first[0Ktravis_time:start:0b3820de[0Ktravis_time:end:0b3820de:start=1587199847024416250,finish=1587199847027152315,duration=2736065,event=home_paths[0Ktravis_time:start:1438c750[0Ktravis_time:end:1438c750:start=1587199847030102415,finish=1587199847043497880,duration=13395465,event=disable_initramfs[0Ktravis_time:start:04534e80[0Ktravis_time:end:04534e80:start=1587199847046424975,finish=1587199847283958604,duration=237533629,event=disable_ssh_roaming[0Ktravis_time:start:047da69b[0Ktravis_time:end:047da69b:start=1587199847286933659,finish=1587199847289124350,duration=2190691,event=debug_tools[0Ktravis_time:start:108d7520[0Ktravis_time:end:108d7520:start=1587199847291778855,finish=1587199847294564758,duration=2785903,event=uninstall_oclint[0Ktravis_time:start:2550ae4e[0Ktravis_time:end:2550ae4e:start=1587199847297269771,finish=1587199847299804842,duration=2535071,event=rvm_use[0Ktravis_time:start:13c2ff2a[0Ktravis_time:end:13c2ff2a:start=1587199847302462018,finish=1587199847309229361,duration=6767343,event=rm_etc_boto_cfg[0Ktravis_time:start:0b3ac754[0Ktravis_time:end:0b3ac754:start=1587199847311746856,finish=1587199847314017242,duration=2270386,event=rm_oraclejdk8_symlink[0Ktravis_time:start:19139e80[0Ktravis_time:end:19139e80:start=1587199847316629659,finish=1587199847406673597,duration=90043938,event=enable_i386[0Ktravis_time:start:01ee86f5[0Ktravis_time:end:01ee86f5:start=1587199847409572800,finish=1587199847414859466,duration=5286666,event=update_rubygems[0Ktravis_time:start:17fbe2a0[0Ktravis_time:end:17fbe2a0:start=1587199847417622608,finish=1587199848183750998,duration=766128390,event=ensure_path_components[0Ktravis_time:start:0eded4dc[0Ktravis_time:end:0eded4dc:start=1587199848187089766,finish=1587199848189328781,duration=2239015,event=redefine_curl[0Ktravis_time:start:028041bf[0Ktravis_time:end:028041bf:start=1587199848191988294,finish=1587199848194000853,duration=2012559,event=nonblock_pipe[0Ktravis_time:start:18b4938c[0Ktravis_time:end:18b4938c:start=1587199848196593966,finish=1587199854227973889,duration=6031379923,event=apt_get_update[0Ktravis_time:start:01738e30[0Ktravis_time:end:01738e30:start=1587199854231135315,finish=1587199854233224405,duration=2089090,event=deprecate_xcode_64[0Ktravis_time:start:1ad88ae8[0Ktravis_time:end:1ad88ae8:start=1587199854235739795,finish=1587199856613213394,duration=2377473599,event=update_heroku[0Ktravis_time:start:0c61a484[0Ktravis_time:end:0c61a484:start=1587199856616056559,finish=1587199856618043575,duration=1987016,event=shell_session_update[0Ktravis_time:start:0f6712ec[0Ktravis_fold:start:docker_mtu[0Ktravis_fold:end:docker_mtu[0Ktravis_time:end:0f6712ec:start=1587199856620546565,finish=1587199858841664067,duration=2221117502,event=set_docker_mtu[0Ktravis_time:start:041bb46d[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:041bb46d:start=1587199858844869834,finish=1587199858909075568,duration=64205734,event=resolvconf[0Ktravis_time:start:05f1f31e[0Ktravis_time:end:05f1f31e:start=1587199858914764104,finish=1587199859040161098,duration=125396994,event=maven_central_mirror[0Ktravis_time:start:00a28c60[0Ktravis_time:end:00a28c60:start=1587199859043195957,finish=1587199859128570638,duration=85374681,event=maven_https[0Ktravis_time:start:0eddedea[0Ktravis_time:end:0eddedea:start=1587199859132124301,finish=1587199859134203627,duration=2079326,event=fix_ps4[0Ktravis_time:start:0a89ba90[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:09fc6b70[0K$ git clone --depth=50 --branch=master https://github.com/jkrsn98/test.git jkrsn98/test
+Cloning into 'jkrsn98/test'...
+remote: Enumerating objects: 43, done.[K
+remote: Counting objects:   2% (1/43)[Kremote: Counting objects:   4% (2/43)[Kremote: Counting objects:   6% (3/43)[Kremote: Counting objects:   9% (4/43)[Kremote: Counting objects:  11% (5/43)[Kremote: Counting objects:  13% (6/43)[Kremote: Counting objects:  16% (7/43)[Kremote: Counting objects:  18% (8/43)[Kremote: Counting objects:  20% (9/43)[Kremote: Counting objects:  23% (10/43)[Kremote: Counting objects:  25% (11/43)[Kremote: Counting objects:  27% (12/43)[Kremote: Counting objects:  30% (13/43)[Kremote: Counting objects:  32% (14/43)[Kremote: Counting objects:  34% (15/43)[Kremote: Counting objects:  37% (16/43)[Kremote: Counting objects:  39% (17/43)[Kremote: Counting objects:  41% (18/43)[Kremote: Counting objects:  44% (19/43)[Kremote: Counting objects:  46% (20/43)[Kremote: Counting objects:  48% (21/43)[Kremote: Counting objects:  51% (22/43)[Kremote: Counting objects:  53% (23/43)[Kremote: Counting objects:  55% (24/43)[Kremote: Counting objects:  58% (25/43)[Kremote: Counting objects:  60% (26/43)[Kremote: Counting objects:  62% (27/43)[Kremote: Counting objects:  65% (28/43)[Kremote: Counting objects:  67% (29/43)[Kremote: Counting objects:  69% (30/43)[Kremote: Counting objects:  72% (31/43)[Kremote: Counting objects:  74% (32/43)[Kremote: Counting objects:  76% (33/43)[Kremote: Counting objects:  79% (34/43)[Kremote: Counting objects:  81% (35/43)[Kremote: Counting objects:  83% (36/43)[Kremote: Counting objects:  86% (37/43)[Kremote: Counting objects:  88% (38/43)[Kremote: Counting objects:  90% (39/43)[Kremote: Counting objects:  93% (40/43)[Kremote: Counting objects:  95% (41/43)[Kremote: Counting objects:  97% (42/43)[Kremote: Counting objects: 100% (43/43)[Kremote: Counting objects: 100% (43/43), done.[K
+remote: Compressing objects:   2% (1/37)[Kremote: Compressing objects:   5% (2/37)[Kremote: Compressing objects:   8% (3/37)[Kremote: Compressing objects:  10% (4/37)[Kremote: Compressing objects:  13% (5/37)[Kremote: Compressing objects:  16% (6/37)[Kremote: Compressing objects:  18% (7/37)[Kremote: Compressing objects:  21% (8/37)[Kremote: Compressing objects:  24% (9/37)[Kremote: Compressing objects:  27% (10/37)[Kremote: Compressing objects:  29% (11/37)[Kremote: Compressing objects:  32% (12/37)[Kremote: Compressing objects:  35% (13/37)[Kremote: Compressing objects:  37% (14/37)[Kremote: Compressing objects:  40% (15/37)[Kremote: Compressing objects:  43% (16/37)[Kremote: Compressing objects:  45% (17/37)[Kremote: Compressing objects:  48% (18/37)[Kremote: Compressing objects:  51% (19/37)[Kremote: Compressing objects:  54% (20/37)[Kremote: Compressing objects:  56% (21/37)[Kremote: Compressing objects:  59% (22/37)[Kremote: Compressing objects:  62% (23/37)[Kremote: Compressing objects:  64% (24/37)[Kremote: Compressing objects:  67% (25/37)[Kremote: Compressing objects:  70% (26/37)[Kremote: Compressing objects:  72% (27/37)[Kremote: Compressing objects:  75% (28/37)[Kremote: Compressing objects:  78% (29/37)[Kremote: Compressing objects:  81% (30/37)[Kremote: Compressing objects:  83% (31/37)[Kremote: Compressing objects:  86% (32/37)[Kremote: Compressing objects:  89% (33/37)[Kremote: Compressing objects:  91% (34/37)[Kremote: Compressing objects:  94% (35/37)[Kremote: Compressing objects:  97% (36/37)[Kremote: Compressing objects: 100% (37/37)[Kremote: Compressing objects: 100% (37/37), done.[K
+remote: Total 54 (delta 12), reused 0 (delta 0), pack-reused 11[K
+Receiving objects:   1% (1/54)   Receiving objects:   3% (2/54)   Receiving objects:   5% (3/54)   Receiving objects:   7% (4/54)   Receiving objects:   9% (5/54)   Receiving objects:  11% (6/54)   Receiving objects:  12% (7/54)   Receiving objects:  14% (8/54)   Receiving objects:  16% (9/54)   Receiving objects:  18% (10/54)   Receiving objects:  20% (11/54)   Receiving objects:  22% (12/54)   Receiving objects:  24% (13/54)   Receiving objects:  25% (14/54)   Receiving objects:  27% (15/54)   Receiving objects:  29% (16/54)   Receiving objects:  31% (17/54)   Receiving objects:  33% (18/54)   Receiving objects:  35% (19/54)   Receiving objects:  37% (20/54)   Receiving objects:  38% (21/54)   Receiving objects:  40% (22/54)   Receiving objects:  42% (23/54)   Receiving objects:  44% (24/54)   Receiving objects:  46% (25/54)   Receiving objects:  48% (26/54)   Receiving objects:  50% (27/54)   Receiving objects:  51% (28/54)   Receiving objects:  53% (29/54)   Receiving objects:  55% (30/54)   Receiving objects:  57% (31/54)   Receiving objects:  59% (32/54)   Receiving objects:  61% (33/54)   Receiving objects:  62% (34/54)   Receiving objects:  64% (35/54)   Receiving objects:  66% (36/54)   Receiving objects:  68% (37/54)   Receiving objects:  70% (38/54)   Receiving objects:  72% (39/54)   Receiving objects:  74% (40/54)   Receiving objects:  75% (41/54)   Receiving objects:  77% (42/54)   Receiving objects:  79% (43/54)   Receiving objects:  81% (44/54)   Receiving objects:  83% (45/54)   Receiving objects:  85% (46/54)   Receiving objects:  87% (47/54)   Receiving objects:  88% (48/54)   Receiving objects:  90% (49/54)   Receiving objects:  92% (50/54)   Receiving objects:  94% (51/54)   Receiving objects:  96% (52/54)   Receiving objects:  98% (53/54)   Receiving objects: 100% (54/54)   Receiving objects: 100% (54/54), 13.13 KiB | 13.13 MiB/s, done.
+Resolving deltas:   0% (0/13)   Resolving deltas:   7% (1/13)   Resolving deltas:  46% (6/13)   Resolving deltas:  61% (8/13)   Resolving deltas: 100% (13/13)   Resolving deltas: 100% (13/13), done.
+travis_time:end:09fc6b70:start=1587199859139805253,finish=1587199859607362145,duration=467556892,event=checkout[0K$ cd jkrsn98/test
+$ git checkout -qf e9e25b038263d2b4fbaaf6a62d3bc9ac2b5e3ae9
+travis_fold:end:git.checkout[0K
+travis_time:end:09fc6b70:start=1587199859139805253,finish=1587199859612033484,duration=472228231,event=checkout[0Ktravis_time:start:25806a2d[0Ktravis_time:end:25806a2d:start=1587199859614921170,finish=1587199859619589767,duration=4668597,event=env[0Ktravis_fold:start:nvm.install[0Ktravis_time:start:04a60cee[0K$ nvm install stable
+Downloading and installing node v13.13.0...
+Downloading https://nodejs.org/dist/v13.13.0/node-v13.13.0-linux-x64.tar.xz...
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v13.13.0 (npm v6.14.4)
+travis_time:end:04a60cee:start=1587199860116790768,finish=1587199864129698904,duration=4012908136,event=setup[0Ktravis_fold:end:nvm.install[0K
+travis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:03f6e583[0K$ Installing caching utilities
+travis_time:end:03f6e583:start=1587199865122334430,finish=1587199865350477497,duration=228143067,event=setup_casher[0Ktravis_time:start:22862d40[0Ktravis_time:end:22862d40:start=1587199865354844452,finish=1587199865357206537,duration=2362085,event=setup_casher[0Ktravis_time:start:0fb7a39a[0Kattempting to download cache archive[0m
+[32;1mfetching master/cache--linux-xenial-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855--node-stable.tgz[0m
+[32;1mfound cache[0m
+travis_time:end:0fb7a39a:start=1587199865360164406,finish=1587199866551641235,duration=1191476829,event=setup_casher[0Ktravis_fold:end:cache.1[0K
+travis_fold:start:cache.npm[0K
+travis_time:start:2d8a65cd[0Ktravis_time:end:2d8a65cd:start=1587199866703702071,finish=1587199866706188716,duration=2486645,event=setup_cache[0Ktravis_time:start:0490b116[0Kadding /home/travis/build/jkrsn98/test/node_modules to cache[0m
+creating directory /home/travis/build/jkrsn98/test/node_modules[0m
+travis_time:end:0490b116:start=1587199866709345375,finish=1587199867673392581,duration=964047206,event=setup_cache[0Ktravis_fold:end:cache.npm[0K$ node --version
+v13.13.0
+$ npm --version
+6.14.4
+$ nvm --version
+0.35.3
+
+travis_fold:start:install.npm[0Ktravis_time:start:08d67bf9[0K$ npm install 
+[37;40mnpm[0m [0m[34;40mnotice[0m[35m[0m created a lockfile as package-lock.json. You should commit this file.
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m test@0.0.1 No repository field.
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m test@0.0.1 No license field.
+[0m
+audited 42 packages in 0.502s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found [92m0[0m vulnerabilities
+
+travis_time:end:08d67bf9:start=1587199867980751896,finish=1587199868857123903,duration=876372007,event=install[0Ktravis_fold:end:install.npm[0K
+travis_time:start:12ecddc8[0K$ npm test
+
+> test@0.0.1 test /home/travis/build/jkrsn98/test
+> jshint script.js
+
+travis_time:end:12ecddc8:start=1587199868861193362,finish=1587199869188787578,duration=327594216,event=[0K[32;1mThe command "npm test" exited with 0.[0m
+travis_fold:start:cache.2[0Kstore build cache
+travis_time:start:06405564[0Ktravis_time:end:06405564:start=1587199869192813795,finish=1587199869195255207,duration=2441412,event=cache[0Ktravis_time:start:08138997[0K[32;1mnothing changed[0m
+travis_time:end:08138997:start=1587199869198444596,finish=1587199870044281142,duration=845836546,event=cache[0Ktravis_fold:end:cache.2[0K
+
+Done. Your build exited with 0.
