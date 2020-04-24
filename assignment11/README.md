@@ -2,6 +2,5 @@
 ### Currency Conversion App
 A currency conversion app using an [API to get exchange rates]([https://github.com/exchangeratesapi/exchangeratesapi](https://github.com/exchangeratesapi/exchangeratesapi)) with [React](https://reactjs.org/](https://reactjs.org/)).
 
-[https://github.com/jkrsn98/currencyconverter/](https://github.com/jkrsn98/currencyconverter/)
-
+[Link to GitHub repo](https://github.com/jkrsn98/currencyconverter/))
 Hosted with [GitHub Pages](https://github.com/apps/github-pages): [https://jkrsn98.github.io/currencyconverter/](https://jkrsn98.github.io/currencyconverter/)
