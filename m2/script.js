@@ -11,6 +11,8 @@ function myKeyPress(e){
   var keyPressed;
   if(window.event) { // IE
     keyPressed = e.keyCode;
+    var formattedNumber = mytextbox.replace(/[^0-9]+/g, "");
+    textinput.value = formatPhoneNumber(formattedNumber);
   } else if(e.which){ // Netscape/Firefox/Opera
     keyPressed = e.which;
   }
