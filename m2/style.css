@@ -1,0 +1,26 @@
+/* TODO: Style the input field so that at minimum ... */
+/* 1. The input has only the bottom border
+ * 2. The font is a monospaced font
+ * (all other design decisions are up to you)
+ */
+
+ *{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   margin: 0 auto;
+   text-align: center;
+   font-family: 'Major Mono Display', monospace;
+   font-size: 24px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+ }
+
+input:focus{
+  outline:none;
+}
+input:focus::placeholder{
+  color:transparent;
+}
