@@ -28,6 +28,8 @@ function myKeyPress(e){
 
   // TODO: Add a condition to ignore entries beyond 10 digits
 
+  //done in html
+
 }
 
 function formatPhoneNumber(value){
